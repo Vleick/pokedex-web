@@ -3,8 +3,9 @@ import requests
 from pathlib import Path
 
 st.set_page_config(
-    page_title="Pokédex",
-    page_icon=Path("assets/favicon.ico")
+    page_title="Pokédex Web",
+    page_icon=Path("favicon.ico"),
+    layout="centered"
 )
 
 # Traducción y emoji de tipos
