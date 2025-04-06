@@ -1,5 +1,11 @@
 import streamlit as st
 import requests
+from pathlib import Path
+
+st.set_page_config(
+    page_title="Pokédex",
+    page_icon=Path("assets/favicon.ico")
+)
 
 # Traducción y emoji de tipos
 type_data = {
