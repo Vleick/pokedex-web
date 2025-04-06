@@ -157,7 +157,7 @@ def get_pokemon_data(nombre_raw):
     }
 
 # Interfaz principal
-st.title("🔎 Pokédex Web en Español")
+st.title("🔎 Pokédex Web by Vleick")
 
 params = st.query_params
 nombre = params.get("pokemon")
