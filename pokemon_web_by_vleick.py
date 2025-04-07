@@ -157,7 +157,19 @@ def get_pokemon_data(nombre_raw):
     }
 
 # Interfaz principal
-st.title("⚡ Pokédex Web <span style='font-family: \"Dancing Script\", cursive;'>by Vleick</span>", unsafe_allow_html=True)
+st.markdown(
+    """
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+        .title {
+            font-family: 'Dancing Script', cursive;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+st.title("⚡ Pokédex Web <span class='title'>by Vleick</span>", unsafe_allow_html=True)
 
 params = st.query_params
 nombre = params.get("pokemon")
