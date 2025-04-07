@@ -157,7 +157,7 @@ def get_pokemon_data(nombre_raw):
     }
 
 # Interfaz principal
-st.title("⚡ Pokédex Web <span style='font-family: \"Freestyle Script\";'>by Vleick</span>", unsafe_allow_html=True)
+st.title("⚡ Pokédex Web <span style='font-family: \"Dancing Script\", cursive;'>by Vleick</span>", unsafe_allow_html=True)
 
 params = st.query_params
 nombre = params.get("pokemon")
