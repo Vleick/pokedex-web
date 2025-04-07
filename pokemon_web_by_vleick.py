@@ -156,8 +156,11 @@ def get_pokemon_data(nombre_raw):
         "evoluciones": imagenes_evo
     }
 
-# Interfaz principal
-st.title("🔎 Pokédex Web by Vleick")
+# Título con fuente personalizada
+st.markdown(
+    "<h1 style='text-align: center;'>🔎 Pokédex Web <span style='font-family: Freestyle Script; font-size: 36px;'>by Vleick</span></h1>",
+    unsafe_allow_html=True
+)
 
 params = st.query_params
 nombre = params.get("pokemon")
